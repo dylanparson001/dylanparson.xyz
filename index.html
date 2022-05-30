@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Dylan Parson</title>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/1909196ffa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="main">
-    <h1>This is my Web page!</h1>
-    <nav class="navigation">
-        <a class="nav-items" href="/index.html">Home</a>
-        <a class="nav-items" href="/">Blog</a>
-        <a class="nav-items" href="/">Portfolio</a>
-    </nav>
-
-    <p id="aboutme">Hi! My name is Dylan Parson, I am currently pursuing a career in IT. This website will mostly be to document my progress. 
-        The main things that interest me about technology are system administration, specifically in scripting and automation. Web development is also
-        something that I am interested in and will be building this site from scratch, mainly for fun and to see what I can accomplish.
-    </p>
-    </div> 
-</body>
+      <h2 id="name">Dylan Parson</h2>
+      <div class="intro">
+        <h1 id="greeting">Hey, I'm Dylan</h1>
+        <button id="about-button">About Me</button>
+        <aside id="about-me" class="hidden">
+          <p>
+            Hi! My name is Dylan Parson, I am currently pursuing a career in IT.
+            This website will mostly be to document my progress. The main things
+            that interest me about technology are system administration,
+            specifically in scripting and automation. Web development is also
+            something that I am interested in and will be building this site
+            from scratch, mainly for fun and to see what I can accomplish.
+          </p>
+          <div id="close">X</div>
+        </aside>
+        <div class="links">
+          <a target="#" href="https://github.com/dylanparson001">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a target="#" href="https://www.linkedin.com/in/dylan-parson/">
+            <i class="fab fa-brands fa-linkedin" style="font-size: 36px"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <main class="work">
+      <h2 id="title">My Projects</h2>
+      <div class="work-items">
+        <div id="projects">Link to Projects Page</div>
+        <div id="blog">Link to Blog page</div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
