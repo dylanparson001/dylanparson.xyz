@@ -13,26 +13,26 @@
   </head>
   <body>
     <div class="main">
-      <a href="index.html" id="name">Dylan Parson</a>
+      <a href="index.html" id="name">Dylan Parson </a>
       <div class="intro">
         <h1 id="greeting">Hey, I'm Dylan</h1>
         <button id="about-button">About Me</button>
         <aside id="about-me" class="hidden">
-          <p>
+          <p class = "about-me">
             Hi! My name is Dylan Parson, I am currently pursuing a career in IT.
             This website will mostly be to document my progress. The main things
-            that interest me about technology are web development, automation,
-            sys admin. Thanks for checking my page
+            that interest me about technology are software engineering. 
           </p>
-          <h3>Contact Info:</h3>
-          <p>Email: dylan.parson001@gmail.com</p>
+          <h3 class = "about-me">Contact Info:</h3>
+          <p class = "about-me">Email: dylan.parson001@gmail.com</p>
+
           <div id="close">X</div>
         </aside>
         <div class="links">
-          <a target="#" href="https://github.com/dylanparson001">
+          <a target="_blank" href="https://github.com/dylanparson001">
             <i class="fab fa-github fa-2x"></i>
           </a>
-          <a target="#" href="https://www.linkedin.com/in/dylan-parson/">
+          <a target="_blank" href="https://www.linkedin.com/in/dylan-parson/">
             <i class="fab fa-brands fa-linkedin" style="font-size: 36px"></i>
           </a>
         </div>
@@ -40,11 +40,77 @@
     </div>
 
     <main class="work">
-      <a href="projects.html" id="work-title"
-        >My Projects (Will add as I work on projects)</a
-      >
-      <div class="work-items">
-      </div>
+      <h2 id="work-title">My Projects</h2>
+      <article class="work-items">
+        <div id="inventory">
+          <h3>
+            Onyx Solutions:
+            <br />
+            <a
+              target="_blank"
+              class="project-links"
+              href="https://github.com/dylanparson001/inventory-manager"
+              >Code</a
+            >
+          </h3>
+          <p id="memory-game-description">
+            I am designing a web app that will keep track of general
+            inventory. This project is mainly to get back in the swing of
+            javascript and is built using regular javascript. This will become
+            part of a full stack project that I am planning that will manage
+            many tasks for a service company. Tasks included are: inventory, day
+            to day scheduling, customer histories.
+          </p>
+        </div>
+        <div id="memory-game">
+          <h3>
+            Dark Souls Memory Game:
+            <br />
+            <a
+              class="project-links"
+              href="https://dylanparson001.github.io/memory-game-dark-souls/"
+              target="_blank"
+              >Live Site</a
+            >
+            ||
+            <a
+              target="_blank"
+              class="project-links"
+              href="https://github.com/dylanparson001/memory-game-dark-souls"
+              >Code</a
+            >
+          </h3>
+          <p id="inventory-description">
+            Memory card game, made with react a memory game with a Dark Souls
+            theme. Goal of the game is to click all the cards only once. If you
+            click the same card twice it resets the score.
+          </p>
+        </div>
+        <div id="weather">
+          <h3>
+            Weather API website:
+            <br />
+            <a
+              href="https://dylanparson001.github.io/weather-webApp/"
+              target="_blank"
+              class="project-links"
+              >Live Site</a
+            >
+            ||
+            <a
+              target="_blank"
+              href="https://github.com/dylanparson001/weather-webApp"
+              class="project-links"
+              >Code</a
+            >
+          </h3>
+          <p id="inventory-description">
+            Website that utilizes asyncronous calls to the weather API. Users
+            can enter their location, degree format and are returned with the
+            current, high and low temps at that time.
+          </p>
+        </div>
+      </article>
     </main>
     <script src="./index.js"></script>
   </body>
