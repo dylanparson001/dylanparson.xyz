@@ -1,13 +1,15 @@
 :root{
-  --main-header-color: #0c0c1d;
+  --main-header-color: #17176e;
   --main-text-color: #ffffff;
   --main-trans-color: #757efa;
-  --main-background-color: #a8a8a8;
+  --main-background-color: #0a0514;
   --button-border-color: #ffffff;
   --button-background-color: #000000;
   --button-text-color: #ffffff;
   --button-trans-background: #dbdbdb;
   --button-trans-color: #000;
+  --icon-size: 3rem;
+  --link-color: #fffb00;
 }
 
 body {
@@ -15,13 +17,25 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
+  color: var(--button-text-color)
+}
+
+#top-arrow{
+  color:var(--button-text-color);
+  font-size: 2rem;
+  margin: 4em 0 0 1em;
+  position: sticky;
+  top: 10px;
+}
+i{
+  font-size: var(--icon-size);
 }
 .main {
   display: flex;
   flex-direction: column;
-  background-color: var(--main-header-color);
+  background-image: url(/images/stacked-steps-haikei.svg);
   color: var(--main-text-color);
-  box-shadow: 0 0 15px 60px var(--main-header-color);
+  height: 100%;
 }
 .hidden {
   display: none;
@@ -29,16 +43,7 @@ body {
 a {
   text-decoration: none;
 }
-#name {
-  margin: 1% 0 0 1%;
-  color: var(--main-text-color);
-  font-size: 1.5rem;
-  width: 8%;
-}
-#name:hover{
-  transition:all 300ms ease-in-out;
-  color:var(--main-trans-color);
-}
+
 #greeting{
   overflow: hidden;
   border-right: .1em solid var(--main-trans-color);
@@ -53,7 +58,7 @@ a {
   to { border-color: white; }
 }
 .intro {
-  margin: 0 0 10% 0;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,9 +112,24 @@ a {
   transition: all 400ms ease-in-out;
   color: var(--main-trans-color);
 }
+/* Skills */
+.skills{
+  color: var(--main-text-color);
+  max-width: 80%;
+  margin: 25vh auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.skills i {
+  font-size: 5rem;
+}
 /*Projects, Blog */
 #work-title{
-  text-align: center;
+  text-align: left;
+  margin: 5% 1%;
 }
 .work {
   margin: 5% 1%;
@@ -118,23 +138,66 @@ a {
 .work-items {
   display: flex;
   flex-direction: row;
+
 }
-.work-items div {
+.work-items-card {
+  background-color: var(--main-header-color);
   width: 45vw;
   height: 50vh;
-  border: solid black 2px;
   margin: 0 1em;
   text-align: center;
+  background-image: url(/images/blurry-gradient-haikei.svg);
 }
 
-
+.work-items-title{
+  font-size: 1.8em;
+}
+.work-items-description{
+  font-size: 1.4em;
+  padding: 5%;
+}
+.fade-in {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.fade-in.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 .project-links {
-  color: white;
+  color: var(--link-color);
 }
 .project-links:hover {
   transition: all 400ms ease-in-out;
   color: var(--main-trans-color);
 }
+.fade-in.active:nth-child(odd) {
+  animation-delay: 3s;
+}
+/* Contact Form */
+.contact{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+.in-development{
+  background-color: hsl(0, 0%, 0%);
+  z-index: 2;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background: repeating-linear-gradient(
+  -55deg,
+  rgb(251, 255, 0),
+  rgb(0, 0, 0) 10px,
+  rgb(0, 0, 0) 10px,
+  rgb(0, 0, 0) 20px
+);
+}
+
 @media only screen and (max-width: 1000px) {
 .work{
     margin-top: 18%;
@@ -153,18 +216,15 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .work-items div {
+  .work-items-card {
     width: 95vw;
     height:  auto;
-    font-size: 1.8rem;
+    font-size: 1rem;
     border: solid black 2px;
     margin: 1em auto;
     text-align: center;
   }
-}
-
-@media only screen and (max-width: 1100) {
-.work{
-    margin-top: 15%;
+  .skills{
+    flex-direction: column;
   }
 }

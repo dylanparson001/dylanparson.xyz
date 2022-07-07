@@ -6,64 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <title>Dylan Parson</title>
-    <script
-      src="https://kit.fontawesome.com/1909196ffa.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/1909196ffa.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <span id="top"></span>
     <div class="main">
-      <a href="index.html" id="name">Dylan Parson </a>
       <div class="intro">
         <h1 id="greeting">Hey, I'm Dylan</h1>
         <button id="about-button">About Me</button>
         <aside id="about-me" class="hidden">
           <p class = "about-me">
             Hi! My name is Dylan Parson, I am currently pursuing a career in IT.
-            This website will mostly be to document my progress. The main things
-            that interest me about technology are software engineering. 
+            This website serves as my portfolio and I will be posting my projects as I 
+            create them. Thanks!
           </p>
           <h3 class = "about-me">Contact Info:</h3>
           <p class = "about-me">Email: dylan.parson001@gmail.com</p>
-
+          <p class="about-me">Phone: (706)-264-0556</p>
           <div id="close">X</div>
         </aside>
         <div class="links">
           <a target="_blank" href="https://github.com/dylanparson001">
-            <i class="fab fa-github fa-2x"></i>
+            <i class="fab fa-github"></i>
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/dylan-parson/">
-            <i class="fab fa-brands fa-linkedin" style="font-size: 36px"></i>
+            <i class="fab fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
     </div>
-
-    <main class="work">
+      <a href="#top" ><span id="top-arrow">&#8593; </span></a>
+    <aside class="skills fade-in">
+      <div>
+        <h2>Web Development Skills</h2>
+        <img src="./images/html.png" alt="HTML5">
+        <img src="./images/css3.png" alt="CSS3">
+        <img src="./images/typescript.png" alt="TypeScript">
+        <img src="./images/angular.png" alt="Angular Framework">
+        <img src="./images/php.png" alt="PHP">
+      </div>
+    </aside>
+    <main class="work fade-in">
       <h2 id="work-title">My Projects</h2>
       <article class="work-items">
-        <div id="inventory">
-          <h3>
+        <div class="work-items-card" id="inventory">
+          <h1>Under Construction</h1>
+          <h1 class="in-development"> `
+          </h1>
+          <h3 class="work-items-title">
             Onyx Solutions:
             <br />
             <a
-              target="_blank"
-              class="project-links"
-              href="https://github.com/dylanparson001/inventory-manager"
+            target="_blank"
+            class="project-links"
+            href="https://github.com/dylanparson001/inventory-manager"
               >Code</a
             >
           </h3>
-          <p id="memory-game-description">
+          
+          <p class="work-items-description" >
             I am designing a web app that will keep track of general
-            inventory. This project is mainly to get back in the swing of
-            javascript and is built using regular javascript. This will become
-            part of a full stack project that I am planning that will manage
-            many tasks for a service company. Tasks included are: inventory, day
-            to day scheduling, customer histories.
+            inventory built with Angular and PHP. Still under Development
           </p>
         </div>
-        <div id="memory-game">
-          <h3>
+        <div class="work-items-card" id="memory-game">
+          <h3 class="work-items-title">
             Dark Souls Memory Game:
             <br />
             <a
@@ -80,14 +87,14 @@
               >Code</a
             >
           </h3>
-          <p id="inventory-description">
+          <p class="work-items-description">
             Memory card game, made with react a memory game with a Dark Souls
             theme. Goal of the game is to click all the cards only once. If you
             click the same card twice it resets the score.
           </p>
         </div>
-        <div id="weather">
-          <h3>
+        <div class="work-items-card" id="weather">
+          <h3 class="work-items-title">
             Weather API website:
             <br />
             <a
@@ -104,7 +111,7 @@
               >Code</a
             >
           </h3>
-          <p id="inventory-description">
+          <p class="work-items-description">
             Website that utilizes asyncronous calls to the weather API. Users
             can enter their location, degree format and are returned with the
             current, high and low temps at that time.
@@ -112,6 +119,16 @@
         </div>
       </article>
     </main>
+
+    <!-- <form action="mailto:dylan.parson001@gmail.com" class="contact">
+      <label for="name">Name:</label>
+      <input type="text" name="name">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject">
+      <label for="message">Message:</label>
+      <textarea name="message" id=""></textarea>
+      <input type="submit">
+    </form> -->
     <script src="./index.js"></script>
   </body>
 </html>
