@@ -33,7 +33,6 @@ i{
 .main {
   display: flex;
   flex-direction: column;
-  background-image: url(/images/stacked-steps-haikei.svg);
   color: var(--main-text-color);
   height: 100%;
 }
@@ -81,6 +80,7 @@ a {
 #about-me {
   width: 30vw;
   height: auto;
+  top: 5em;
   position: fixed;
   z-index: 10;
   background-color: white;
@@ -138,15 +138,18 @@ a {
 .work-items {
   display: flex;
   flex-direction: row;
-
 }
 .work-items-card {
   background-color: var(--main-header-color);
-  width: 45vw;
+  width: 100vw;
   height: 50vh;
   margin: 0 1em;
   text-align: center;
-  background-image: url(/images/blurry-gradient-haikei.svg);
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
 
 .work-items-title{
@@ -156,16 +159,7 @@ a {
   font-size: 1.4em;
   padding: 5%;
 }
-.fade-in {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
-.fade-in.active{
-  transform: translateY(0);
-  opacity: 1;
-}
+
 .project-links {
   color: var(--link-color);
 }
@@ -173,9 +167,7 @@ a {
   transition: all 400ms ease-in-out;
   color: var(--main-trans-color);
 }
-.fade-in.active:nth-child(odd) {
-  animation-delay: 3s;
-}
+
 /* Contact Form */
 .contact{
   display: flex;
@@ -184,19 +176,36 @@ a {
   justify-content: center;
   max-width: 50%;
 }
-.in-development{
-  background-color: hsl(0, 0%, 0%);
-  z-index: 2;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  background: repeating-linear-gradient(
-  -55deg,
-  rgb(251, 255, 0),
-  rgb(0, 0, 0) 10px,
-  rgb(0, 0, 0) 10px,
-  rgb(0, 0, 0) 20px
-);
+.contact label{
+  font-size: 1.2rem;
+  margin: 2% 0;
 }
+.contact input {
+  width: 100%;
+}
+#submit-btn{
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  border-color: var(--button-border-color);
+  margin: 5% auto;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10%;
+  width: auto;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.contact textarea{
+  height: 5rem;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
 
 @media only screen and (max-width: 1000px) {
 .work{
@@ -205,6 +214,7 @@ a {
   #about-me {
     width: 75vw;
     height: auto;
+    top: 25em;
     position: fixed;
     z-index: 10;
     background-color: white;

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <title>Dylan Parson</title>
-    <script src="https://kit.fontawesome.com/1909196ffa.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1909196ffa.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <span id="top"></span>
@@ -15,14 +18,15 @@
         <h1 id="greeting">Hey, I'm Dylan</h1>
         <button id="about-button">About Me</button>
         <aside id="about-me" class="hidden">
-          <p class = "about-me">
-            Hi! My name is Dylan Parson, I am currently pursuing a career in IT.
-            This website serves as my portfolio and I will be posting my projects as I 
-            create them. Thanks!
+          <p class="about-me">
+            Hi! My name is Dylan Parson, I am pursuing a career in software development. 
+            I currently work as an IT technician, but my passions are in web development, creating applications 
+            that will enhance business operations.
+            This website serves as my portfolio and I will be posting my
+            projects as I create them. Thanks!
           </p>
-          <h3 class = "about-me">Contact Info:</h3>
-          <p class = "about-me">Email: dylan.parson001@gmail.com</p>
-          <p class="about-me">Phone: (706)-264-0556</p>
+          <h3 class="about-me">Contact Info:</h3>
+          <p class="about-me">Email: dylan.parson001@gmail.com</p>
           <div id="close">X</div>
         </aside>
         <div class="links">
@@ -35,43 +39,30 @@
         </div>
       </div>
     </div>
-      <a href="#top" ><span id="top-arrow">&#8593; </span></a>
-    <aside class="skills fade-in">
-      <div>
-        <h2>Web Development Skills</h2>
-        <img src="./images/html.png" alt="HTML5">
-        <img src="./images/css3.png" alt="CSS3">
-        <img src="./images/typescript.png" alt="TypeScript">
-        <img src="./images/angular.png" alt="Angular Framework">
-        <img src="./images/php.png" alt="PHP">
-      </div>
-    </aside>
-    <main class="work fade-in">
+    <!-- <a href="#top"><span id="top-arrow">&#8593; </span></a> -->
+    <main>
       <h2 id="work-title">My Projects</h2>
       <article class="work-items">
         <div class="work-items-card" id="inventory">
-          <h1>Under Construction</h1>
-          <h1 class="in-development"> `
-          </h1>
           <h3 class="work-items-title">
-            Onyx Solutions:
+            Onyx Solutions
             <br />
             <a
-            target="_blank"
-            class="project-links"
-            href="https://github.com/dylanparson001/inventory-manager"
+              target="_blank"
+              class="project-links"
+              href="https://github.com/dylanparson001/inventory-manager"
               >Code</a
             >
           </h3>
-          
-          <p class="work-items-description" >
-            I am designing a web app that will keep track of general
-            inventory built with Angular and PHP. Still under Development
+          <p class="work-items-description">
+            Web Application to assist companies increase communication through
+            instant messaging, track customer appointments, and much more. Under
+            development.
           </p>
         </div>
         <div class="work-items-card" id="memory-game">
           <h3 class="work-items-title">
-            Dark Souls Memory Game:
+            Dark Souls Memory Game
             <br />
             <a
               class="project-links"
@@ -79,7 +70,7 @@
               target="_blank"
               >Live Site</a
             >
-            ||
+
             <a
               target="_blank"
               class="project-links"
@@ -95,7 +86,7 @@
         </div>
         <div class="work-items-card" id="weather">
           <h3 class="work-items-title">
-            Weather API website:
+            Weather API website
             <br />
             <a
               href="https://dylanparson001.github.io/weather-webApp/"
@@ -103,7 +94,7 @@
               class="project-links"
               >Live Site</a
             >
-            ||
+
             <a
               target="_blank"
               href="https://github.com/dylanparson001/weather-webApp"
@@ -120,15 +111,16 @@
       </article>
     </main>
 
-    <!-- <form action="mailto:dylan.parson001@gmail.com" class="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:dylan.parson001@gmail.com" class="contact">
       <label for="name">Name:</label>
       <input type="text" name="name">
       <label for="subject">Subject</label>
       <input type="text" name="subject">
       <label for="message">Message:</label>
       <textarea name="message" id=""></textarea>
-      <input type="submit">
-    </form> -->
+      <input id="submit-btn" type="submit">
+    </form>
     <script src="./index.js"></script>
   </body>
 </html>
