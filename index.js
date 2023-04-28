@@ -1,17 +1,19 @@
-const aboutBtn = document.getElementById("about-button");
-const aboutMe = document.getElementById("about-me");
-const closeButton = document.getElementById("close");
+const navbar = document.querySelector(".mobile-info-display");
+const navButton = document.querySelector(".nav-button");
+const projectSection = document.querySelector(".project-section");
 const main = document.querySelector(".main");
-const arrow = document.querySelector("#top-arrow")
+const picture = document.querySelector(".nav-picture");
+const navLinks = document.querySelector(".nav-links");
 
-//Get the button:
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+navButton.addEventListener("click", () => {
+  navbar.classList.toggle("nav-open");
+  main.classList.toggle("project-nav-open");
+  navLinks.classList.toggle("nav-links-open");
+});
 
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    arrow.classList.remove("hidden");
-  } else {
-    arrow.classList.add("hidden");
-  }
-}
+picture.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

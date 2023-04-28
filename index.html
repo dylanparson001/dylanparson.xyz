@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dylan Parson's Software Portfolio'">
+    <meta name="description" content="Dylan Parson's Software Portfolio'" />
     <link rel="stylesheet" href="./index.css" />
     <title>Dylan Parson</title>
     <script
@@ -14,75 +14,107 @@
   </head>
   <body>
     <span id="top"></span>
-    <div class="main">
-      <nav class="nav-container">
-        <div class="nav-items">
-
-          <img class="nav-picture" src="./images/dylan.jfif" alt="Dylan Parson">
-          
+    <nav class="nav-container">
+      <div class="nav-items">
+        <div class="mobile-picture-icon">
+          <img
+            class="nav-picture"
+            src="./images/dylan.jfif"
+            alt="Dylan Parson"
+          />
+          <p class="hidden"><i class="fas fa-bars nav-button nav-icon"></i></p>
+        </div>
+        <div class="mobile-info-display">
           <div class="nav-title">
+            <h1>Dylan Parson</h1>
             <h2>Software Developer</h2>
           </div>
           <div class="nav-links">
-            <a href="https://github.com/dylanparson001" target="_blank"><i class="fab fa-github"></i> Github</a>
-            <a href="https://www.linkedin.com/in/dylan-parson/" target="_blank"><i class="fab fa-brands fa-linkedin"></i> Linked In</a>
-            <p><a href="mailto:dylan.parson001@gmail.com"><i class="fa fa-envelope"></i> dylan.parson001@gmail.com</p></a>
+            <a
+              class="nav-link"
+              href="https://github.com/dylanparson001"
+              target="_blank"
+              ><i class="fab fa-github"></i> Github</a
+            >
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/dylan-parson/"
+              target="_blank"
+              ><i class="fab fa-brands fa-linkedin"></i> Linked In</a
+            >
+            <a
+              class="nav-link"
+              href="mailto:dylan.parson001@gmail.com"
+              target="_blank"
+              ><p>
+                <i class="fa fa-envelope"></i> dylan.parson001@gmail.com
+              </p></a
+            >
           </div>
           <div class="nav-about-container">
             <p class="nav-about-me">
-              Hi, I am a full stack developer that and I create web applications and specialize in Dot Net framework.
-              <br>
-              I am always learning and perfecting my craft, please feel free to contact me!
-              <br>
+              Hi, I am a full stack developer that and I create web applications
+              and specialize in Dot Net framework.
+              <br />
+              I am always learning and perfecting my craft, please feel free to
+              contact me!
+              <br />
               Thanks
             </p>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <main class="main">
-        <section class="project-section">
-          <p class="project-section-title">Projects</p>
-          <div>
-            <div class="project">
-              <p class="project-title">Inventory Manager</p>
-              <div class="project-links">
-                <a target="_blank" href="https://github.com/dylanparson001/Inventory-Website">Live Site</a>
-                <a target="_blank" href="https://github.com/dylanparson001/Inventory-Website">Code</a>
-              </div>
-              <p class="project-description">
-                A website that tracks items, allowing the user to add, edit, delete items.
-                This app is built with Angular, C#, Dot Net Web API, Entity Framework, and SQL Server.
-                
-              </p>
+    <main class="main">
+      <p class="project-section-title">Projects</p>
+      <section class="project-section">
+        <span class="project-section-border"></span>
+        <div>
+          <p class="project-title">Inventory Manager</p>
+          <div class="project">
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://github.com/dylanparson001/Inventory-Website"
+                >Live Site</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/dylanparson001/Inventory-Website"
+                >Code</a
+              >
             </div>
+            <p class="project-description">
+              A website that tracks items, allowing the user to add, edit,
+              delete items. This app is built with Angular, C#, Dot Net Web API,
+              Entity Framework, and SQL Server.
+            </p>
           </div>
-          <div>
-            <div class="project">
-              <p class="project-title">Memory Card Game</p>
-              <div class="project-links">
-                <a target="_blank" href="https://dylanparson001.github.io/memory-game-dark-souls/">Live Site</a>
-                <a target="_blank" href="https://github.com/dylanparson001/memory-game-dark-souls">Code</a>
-              </div>
-              <p class="project-description">
-                A website that tracks items, allowing the user to add, edit, delete items.
-                This app is built with Angular, C#, Dot Net Web API, Entity Framework, and SQL Server.
-                
-              </p>
+        </div>
+        <div>
+          <p class="project-title">Memory Card Game</p>
+          <div class="project">
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://dylanparson001.github.io/memory-game-dark-souls/"
+                >Live Site</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/dylanparson001/memory-game-dark-souls"
+                >Code</a
+              >
             </div>
+            <p class="project-description">
+              Dark Souls Memory Card Game! Keep track of the cards you click and try to beat your high score!
+              Built With React, this is a simple app that utilizes lifecycle hooks to send data between components.
+            </p>
           </div>
-          </section>
-
-          <!-- <section class="contact">
-            <div class="contact-container">
-              <p class="contact-title">Contact Me!</p>
-              <div class="contact-links">
-                <p class="contact-links-phone">(689)-286-0335</p>
-                <p class="contact-links-email">dylan.parson001@gmail.com</p>
-              </div>
-            </div>
-          </section> -->
-        </main>
+        </div>
+      </section>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
