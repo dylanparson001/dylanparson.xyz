@@ -1,5 +1,11 @@
-Link: https://dylanparson.xyz/
+## [Portfolio](https://dylanparson.xyz)
 
-#Dylan Parson Personal Page
+## My Personal Website
+My personal portfolio to show my projects. Hosted through Vultr with a 
+a Debian Web Server with Nginx. Shows some basic front end work, some animations, 
+transitions. 
 
-My personal website and portfolio
+### Technologies Used:
+    - HTML, CSS, JavaScript
+    - Linux Debian web server
+    - Nginx
